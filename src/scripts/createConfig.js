@@ -7,7 +7,7 @@ const path = require('path')
 const file = path.resolve(__dirname, './../app/config/environments/develop.js')
 
 
-function createConfig(appName = 'meetings-api'){
+function createConfig(){
     console.log('Creating config...e')
     exec('git rev-parse --abbrev-ref HEAD', (err, stdout) => {
         if (err) return console.log(err)
